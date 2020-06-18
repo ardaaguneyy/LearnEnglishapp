@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout5">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="107dp"
+            android:layout_height="80dp"
+            android:paddingLeft="8dp"
+            app:srcCompat="@drawable/tr" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="89dp"
+            android:layout_height="80dp"
+            android:onClick="changelanguage"
+            app:srcCompat="@drawable/change" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="116dp"
+            android:layout_height="83dp"
+            app:srcCompat="@drawable/eng" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/translationtext"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:ems="10"
+            android:hint="Çevirilecek Kelime"
+            android:inputType="textPersonName"
+            android:paddingLeft="8dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:onClick="translationonclick"
+            android:text="Çevir" />
+
+        <TextView
+            android:id="@+id/translationresulttext"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:paddingLeft="8dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

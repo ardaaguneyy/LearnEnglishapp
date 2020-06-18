@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    tools:context=".login.MainActivity">
+
+    <EditText
+        android:id="@+id/emailtext"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="192dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordtext"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailtext" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="28dp"
+        android:text="Beni Hatırla"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:onClick="signinbutton"
+        android:shadowColor="#850000"
+        android:text="Giriş Yap"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="57dp"
+        android:onClick="signupbutton"
+        android:text="Kayıt Ol"
+        app:layout_constraintBottom_toTopOf="@+id/resetpassword"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="326dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="47dp"
+        android:text="Easily Learn English"
+        android:textAlignment="center"
+        android:textColor="#A80B3A"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resetpassword"
+        android:layout_width="123dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="78dp"
+        android:onClick="resetpasswordonclick"
+        android:text="Şifremi Unuttum"
+        android:textColor="#D53B53"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "650842443033",
+    "firebase_url": "https://learnenglish-5029b.firebaseio.com",
+    "project_id": "learnenglish-5029b",
+    "storage_bucket": "learnenglish-5029b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650842443033:android:cd4b60354c7743cbf28988",
+        "android_client_info": {
+          "package_name": "com.example.easilylearnenglish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650842443033-v0qrspdps2st6rrfcsciijb71qv6lcnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjI-5Zf0_94xzsV5fKL1o2Jl-N5mnaQeo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650842443033-v0qrspdps2st6rrfcsciijb71qv6lcnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
