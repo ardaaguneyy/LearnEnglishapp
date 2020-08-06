@@ -8,7 +8,6 @@ EasilyLearnEnglish açık kaynak kodlu bir projedir. Dileyen herkes kullanabilir
 * SQLite Cursor 
 * API & JSON 
 * Options Menu
-* static 
 * Shared Preferences
 * Linear Layout
 * Relative Layout
